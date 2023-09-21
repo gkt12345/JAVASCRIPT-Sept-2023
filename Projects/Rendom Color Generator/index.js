@@ -32,6 +32,8 @@ function randomColor (){
 
     for(let index=0; index<colorCodeLength; index++){
         const randomNum = Math.floor(Math.random()*chars.length);
+        // substring method extract charactor from start to end and not change orignel string
+                                // (start,      end)
         colorCode += chars.substring(randomNum, randomNum+1);
         // console.log(randomNum, colorCode);
     }
